@@ -1,6 +1,10 @@
 .ce-ai-content-paragraph {
     line-height: 1.6em;
     outline: none;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .ce-ai-content-paragraph[data-placeholder]:empty::before{
