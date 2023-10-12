@@ -25,7 +25,7 @@ import { IconText } from '@codexteam/icons'
  * @description Tool's input and output data format
  * @property {string} text — Paragraph's content. Can include HTML tags: <a><b><i>
  */
-export default class Paragraph {
+export default class CustomParagraph {
   /**
    * Default placeholder for Paragraph Tool
    *
@@ -63,7 +63,7 @@ export default class Paragraph {
      *
      * @type {string}
      */
-    this._placeholder = config.placeholder ? config.placeholder : Paragraph.DEFAULT_PLACEHOLDER;
+    this._placeholder = config.placeholder ? config.placeholder : CustomParagraph.DEFAULT_PLACEHOLDER;
     this._data = {};
     this._element = null;
     this._preserveBlank = config.preserveBlank !== undefined ? config.preserveBlank : false;
