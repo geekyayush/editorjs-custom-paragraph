@@ -51,7 +51,7 @@ export default class CustomParagraph {
 
     this._CSS = {
       block: this.api.styles.block,
-      wrapper: 'ce-paragraph',
+      wrapper: 'ce-ai-content-paragraph',
     };
 
     if (!this.readOnly) {
@@ -273,7 +273,7 @@ export default class CustomParagraph {
   static get toolbox() {
     return {
       icon: IconText,
-      title: 'Text',
+      title: 'AI Content',
     };
   }
 }
