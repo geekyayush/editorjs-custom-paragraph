@@ -1,9 +1,9 @@
-.ce-paragraph {
+.ce-ai-content-paragraph {
     line-height: 1.6em;
     outline: none;
 }
 
-.ce-paragraph[data-placeholder]:empty::before{
+.ce-ai-content-paragraph[data-placeholder]:empty::before{
   content: attr(data-placeholder);
   color: #707684;
   font-weight: normal;
@@ -11,19 +11,19 @@
 }
 
 /** Show placeholder at the first paragraph if Editor is empty */
-.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before {
+.codex-editor--empty .ce-block:first-child .ce-ai-content-paragraph[data-placeholder]:empty::before {
   opacity: 1;
 }
 
-.codex-editor--toolbox-opened .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before,
-.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty:focus::before {
+.codex-editor--toolbox-opened .ce-block:first-child .ce-ai-content-paragraph[data-placeholder]:empty::before,
+.codex-editor--empty .ce-block:first-child .ce-ai-content-paragraph[data-placeholder]:empty:focus::before {
   opacity: 0;
 }
 
-.ce-paragraph p:first-of-type{
+.ce-ai-content-paragraph p:first-of-type{
     margin-top: 0;
 }
 
-.ce-paragraph p:last-of-type{
+.ce-ai-content-paragraph p:last-of-type{
     margin-bottom: 0;
 }
